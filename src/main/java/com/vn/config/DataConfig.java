@@ -15,7 +15,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 @Configuration
 @EnableTransactionManagement
-@PropertySource({"jdbc.properties"})
+@PropertySource({"classpath:jdbc.properties"})
 public class DataConfig {
 
 	@Value("${jdbc.sqlite.connector}")
